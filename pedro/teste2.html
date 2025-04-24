@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>formulario de feedback -programação web</title>
+    </head>
+    <body>
+        <h2>formulário de feedback - curso de programação web</h2>
+        <p>preencha o formulário abaixo para avaliarmos sua experinecia no curso.</p>
+
+    <form action="#" method="post">
+
+       <label for="nome">nome completo:</label>
+       <input type="text" id="nome" name="nome" required placeholder="digite seu nome">
+       <small>campo obrigatório: este campo usa o atributo para garantir que seja preenchido.</small>
+       <br><br>
+
+       <label for="emall">e-mail:</label>
+       <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+       <small>campo obrigatório: o navegador verifica se o formato digitado é um email válido.</small>
+
+       <!--campo de avaliação (numero com limie minimo e máximo) -->
+       <label for="avalação">avaliação do curso (1 a 10)</label>
+       <input type="numeber" id="avaliação" name="avaliação" min="1" max="10" required>
+       <small> o atributo <code>min</code>define o valor minimo e <code> max </code> o valor maximo permitido. </small>
+       <br><br>
+
+       <!-- campo de comentáario (area de texto) -->
+        <label for="comentários">comentario sobre o curso:</label>
+        <textarea id="comentários" name="comentários" rows="4" placegolder="deixe seu feedback aqui..."></textarea>
+        <small>a tag<code>&lt;</code> permite escrever textos mais longos.</small>
+
+        <!-- checkbox (aceitar os termos) -->
+         <input type="checkbox" id="termos" name="termos" required>
+         <label for="termos"> aceito os termos de privacidade</label>
+         <small> o <code>required</code>garante que o usuário só possa enviar se marcar essa opção.</small>
+         <br><br>
+
+         <main>
+         <!-- botão de envio -->
+          <button type="submit">enviar feedback</button>
+          <small>o botão <code>&lt;button type="submit"</code> envia os dados do formulário.</small>
+          </form>
+        </main>
+</body>
+</html>
